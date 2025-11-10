@@ -1,4 +1,15 @@
 # all_football_stop
+<details>
+<summary>Tugas 8</summary>
+Navigator.push() menambah screen ke stack tanpa menghilangkan screen sebelumnya. Hal ini memungkinkan untuk kembali ke screen sebelumnya dengan menggunakan Navigator.pop(). Navigator.push() dapat digunakan dalam navigasi menu utama (main menu) dalam aplikasi. Navigator.pushReplacement() menambah screen ke stack dengan menghilangkan screen sebelumnya. Penggunaan Navigator.pushReplacement() tidak memungkinkan untuk kembali ke screen sebelumnya. Hal ini cocok untuk sistem form dan login.
+
+Untuk membuat halaman yang konsisten, scaffold dapat digunakan sebagai kerangka utama dari halaman. Dalam scaffold, terdapat tempat untuk menempatkan AppBar dan Drawer. AppBar dapat digunakan sebagai header dari halaman, sementara drawer dapat digunakan sebagai panel navigasi cepat antara menu.
+
+Layout widget dalam halaman form digunakan agar form mudah digunakan oleh pengguna. Padding memberikan ruang sehingga elemen-elemen form tidak tertempel satu sama lain, contohnya penggunaan padding untuk setiap bagian dari input (nama, stok, harga, dll). SingleChildScrollView memungkinkan elemen form menjadi scrollable sehingga tidak terjadi overflow, Contohnya sebagai child dari Widget Form di product_form.dart. ListView mengkombinasikan widget Column dan SingleChildScrollView untuk memudahkan pembuatan form yang konsisten.
+
+Penyesuaian warna tema dapat dilakukan di bagian MaterialApp di main.dart melalui theme. Dalam theme dapat dibuat ThemeData yang berisi colorScheme yang dapat memiliki color utama aplikasi. Data color dari theme lalu dapat digunakan dengan Theme.of(context).colorScheme.primary.
+</details>
+
 
 <details>
 <summary>Tugas 7</summary>
