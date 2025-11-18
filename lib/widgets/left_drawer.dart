@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:all_football_stop/screens/menu.dart';
 import 'package:all_football_stop/screens/product_form.dart';
+import 'package:all_football_stop/screens/product_entry_list.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -58,16 +59,27 @@ class LeftDrawer extends StatelessWidget {
                   ));
             },
           ),
+          // ListTile(
+          //   leading: const Icon(Icons.sports_soccer),
+          //   title: const Text('See Products'),
+          //   // Bagian redirection ke MainPage (untuk sementara)
+          //   onTap: () {
+          //     Navigator.pushReplacement(
+          //         context,
+          //         MaterialPageRoute(
+          //           builder: (context) => MyHomePage(),
+          //         ));
+          //   },
+          // ),
           ListTile(
-            leading: const Icon(Icons.sports_soccer),
-            title: const Text('See Products'),
-            // Bagian redirection ke MainPage (untuk sementara)
+            leading: const Icon(Icons.sports_soccer_outlined),
+            title: const Text('Product List'),
             onTap: () {
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
-                  ));
+              // Route to product list page
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductEntryListPage()),
+              );
             },
           ),
         ],

@@ -13,6 +13,7 @@ class MyHomePage extends StatelessWidget {
     ItemHomepage("All Product", Icons.groups, Colors.blue),
     ItemHomepage("My Product", Icons.person, Colors.green),
     ItemHomepage("Add Product", Icons.add_circle_outlined, Colors.red),
+    ItemHomepage("Logout", Icons.logout, Colors.black),
   ];
 
 
